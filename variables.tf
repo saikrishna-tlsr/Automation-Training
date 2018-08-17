@@ -2,6 +2,9 @@
 variable "region" {
  default = "us-east-1"
 }
+variable "ssh_key_pair" {
+  description = "SSH key pair to be provisioned on the instance"
+}
 variable "availabilityZone" {
         default = "us-east-1a"
 }
