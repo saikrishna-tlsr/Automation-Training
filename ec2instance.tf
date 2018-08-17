@@ -2,7 +2,7 @@ resource "aws_instance" "automation" {
   count = 3
   ami = "ami-759bc50a"
   instance_type = "t1.micro"
-  key_name = "${var.ssh_key_pair}"
+  key_name = "sai"
   tags {
     Name = "automation"
   }
