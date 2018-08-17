@@ -34,6 +34,12 @@ ingress {
     to_port     = 22
     protocol    = "tcp"
   }
+        ingress {
+    cidr_blocks = "${var.ingressCIDRblock}"  
+    from_port   = 80
+    to_port     = 80
+    protocol    = "tcp"
+  }
 tags = {
         Name = "My VPC Security Group"
   }
