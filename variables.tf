@@ -2,9 +2,6 @@
 variable "region" {
  default = "us-east-1"
 }
-variable "function_name" {
-  type = "string"
-}
 variable "availabilityZone" {
         default = "us-east-1a"
 }
