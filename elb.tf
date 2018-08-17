@@ -1,6 +1,6 @@
 resource "aws_elb" "test-elb" {
   name               = "terraform-elb"
-  availability_zones = ["us-west-2a", "us-west-2b", "us-west-2c"]
+  availability_zones = ["us-east-1a", "us-east-1b", "us-east-1c"]
 
   access_logs {
     bucket        = "my-vpc-test-bucket1234"
