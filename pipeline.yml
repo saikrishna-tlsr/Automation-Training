@@ -8,5 +8,5 @@ resources:
   jobs:
    plan:
     - get: automation
-    - task: vpc creation
+    - task: vpc-creation
      file: automation/pipeline.yml
