@@ -6,6 +6,7 @@ resources:
     branch: master
     
   jobs:
+  - name: vpc-creation
    plan:
     - get: automation
     - task: vpc-creation
