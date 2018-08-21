@@ -9,4 +9,4 @@ resources:
    plan:
     - get: automation
     - task: vpc-creation
-     file: automation/pipeline.yml
+    - file: automation/pipeline.yml
