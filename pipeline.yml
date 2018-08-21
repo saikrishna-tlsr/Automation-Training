@@ -1,0 +1,14 @@
+resources:
+- name: automation
+  type: git
+  source:
+    uri: https://github.com/saikrishna-tlsr/Automation-Training.git
+    branch: master
+    
+    jobs:
+- name: vpc
+  public: true
+  plan:
+  - get: vpc
+  - task: hello-world
+    file:automation/pipeline.yml
