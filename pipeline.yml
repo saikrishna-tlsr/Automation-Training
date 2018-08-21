@@ -5,8 +5,8 @@ resources:
     uri: https://github.com/saikrishna-tlsr/Automation-Training.git
     branch: master
     
-    jobs:
-- name: vpc creation
-  - get: automation
-  - task: vpc creation
-    file: automation/pipeline.yml
+  jobs:
+   plan:
+    - get: automation
+    - task: vpc creation
+     file: automation/pipeline.yml
