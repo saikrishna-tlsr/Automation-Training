@@ -6,8 +6,8 @@ resources:
     branch: master
     
   jobs:
-  - name: vpc-creation
+  - name: vpc.tf
    plan:
     - get: automation
-    - task: vpc-creation
+    - task: vpc.tf
     - file: automation/pipeline.yml
