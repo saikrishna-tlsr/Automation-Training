@@ -6,9 +6,8 @@ resources:
     branch: master
     
     jobs:
-- name: vpc
-  public: true
+- name: vpc creation
   plan:
-  - get: vpc
-  - task: hello-world
-    file:automation/pipeline.yml
+  - get: automation
+  - task: vpc creation
+    file: automation/pipeline.yml
